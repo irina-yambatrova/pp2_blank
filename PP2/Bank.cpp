@@ -6,7 +6,6 @@ CBank::CBank()
 	m_totalBalance = 0;
 }
 
-
 CBankClient* CBank::CreateClient()
 {
 	unsigned clientId = unsigned(m_clients.size());
@@ -14,7 +13,6 @@ CBankClient* CBank::CreateClient()
 	m_clients.push_back(*client);
 	return client;
 }
-
 
 void CBank::UpdateClientBalance(CBankClient &client, int value)
 {
@@ -37,12 +35,10 @@ void CBank::UpdateClientBalance(CBankClient &client, int value)
 	SetTotalBalance(totalBalance);
 }
 
-
 int CBank::GetTotalBalance()
 {
 	return m_totalBalance;
 }
-
 
 void CBank::SetTotalBalance(int value)
 {
